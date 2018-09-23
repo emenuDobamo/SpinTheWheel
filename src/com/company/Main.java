@@ -27,6 +27,7 @@ public class Main {
         System.out.println("initialization complete, ready for the spin");
 
 
+
         spinner.spin(numOfCoins,numToreveal);
         spinner.show();
     }
