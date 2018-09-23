@@ -11,11 +11,23 @@ public class Main {
         System.out.println("Enter number of coin: ");
         Scanner scnr = new Scanner(System.in);
         int numOfCoins =scnr.nextInt();
-        spinner = new Spinner(numOfCoins);
-        System.out.println("Enter the number of coins to reveal");
-        int numToreveal = scnr.nextInt();
-        spinner.spin(numOfCoins,numToreveal);
+        System.out.println("Input accepted for number of coins: "+numOfCoins);
 
+        System.out.println("\nEnter the number of coins to reveal");
+        int numToreveal = scnr.nextInt();
+        System.out.println("Input accepted for number of coins: "+numToreveal);
+
+
+        System.out.println("\nEnter the number spin:");
+        int numOfSpin = scnr.nextInt();
+        System.out.println("Input accepted for number of coins: "+numToreveal);
+
+
+        spinner = new Spinner(numOfCoins);
+        System.out.println("initialization complete, ready for the spin");
+
+
+        spinner.spin(numOfCoins,numToreveal);
         spinner.show();
     }
 }
