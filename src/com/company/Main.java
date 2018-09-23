@@ -43,5 +43,5 @@ public class Main {
          * Intialize the game.
          */
         Spinner spinner = new Spinner(numOfCoins);
-            }
+    }
 }
