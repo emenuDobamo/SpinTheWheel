@@ -2,54 +2,46 @@ package com.company;
 import java.util.Scanner;
 public class Main {
 
-    private static Spinner spinner;
-
     public static void main(String[] args) {
+        int numOfCoins, numToReveal, numOfSpin;
 
-
-
-        System.out.println("Enter number of coin: ");
+        System.out.print("Enter number of coin: ");
         Scanner scnr = new Scanner(System.in);
-        int numOfCoins =scnr.nextInt();
+        numOfCoins = scnr.nextInt();
+
         if (numOfCoins < 0){
             System.out.println("Invalid Input!");
+            System.exit(0);
         }
         else {
-
             System.out.println("Input accepted for number of coins: "+numOfCoins);
         }
 
+        System.out.print("\nEnter the number of coins to reveal: ");
+        numToReveal = scnr.nextInt();
 
-        System.out.println("\nEnter the number of coins to reveal");
-        int numToreveal = scnr.nextInt();
-        if (numToreveal < 0){
+        if (numToReveal < 0){
             System.out.println("Invalid Input!");
+            System.exit(0);
         }
         else {
-
-            System.out.println("Input accepted for number of coins to reveal: "+numToreveal);
+            System.out.println("Input accepted for number of coins to reveal: "+numToReveal);
         }
 
+        System.out.print("\nEnter the number spin: ");
+        numOfSpin = scnr.nextInt();
 
-        System.out.println("\nEnter the number spin:");
-        int numOfSpin = scnr.nextInt();
         if (numOfSpin < 0){
             System.out.println("Invalid Input!");
+            System.exit(0);
         }
         else {
-
-            System.out.println("Input accepted for number of spin: " + numOfSpin);
+            System.out.println("Input accepted for number of spin: " + numOfSpin+"\n");
         }
 
         /**
          * Intialize the game.
          */
-        spinner = new Spinner(numOfCoins);
-        System.out.println("initialization complete, ready for the spin");
-
-
-
-        spinner.spin(numOfCoins,numToreveal);
-        spinner.show();
-    }
+        Spinner spinner = new Spinner(numOfCoins);
+            }
 }

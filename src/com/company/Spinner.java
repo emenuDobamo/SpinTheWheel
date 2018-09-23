@@ -1,52 +1,22 @@
 package com.company;
 
-
-import java.util.ArrayList;
-import java.util.Random;
-
 public class Spinner {
-
-    //a circular array contains list of coins
-    private CircularList<Coin> coins;
-    private ArrayList<Boolean> visible;
-    private Double rand ;
-
-    /**
+     /**
      * Constructor
      * initializes the circularList with input form user
-
      *
      */
     public Spinner (int numOfCoins){
-        coins = new CircularList<>(numOfCoins);
+        CircularList<Coin> coins = new CircularList<>(numOfCoins);
+        System.out.println("Initializing the game with random coins...");
         for (int i = 0; i < numOfCoins; i++){
             coins.add(i,new Coin());
-
         }
-
-    }
-
-    /**
-     *
-     *
-     * @param  numOfCoins  an absolute URL giving the base location of the image
-     * @param  numToReveal the location of the image, relative to the url argument
-     */
-
-    public void spin(int numOfCoins, int numToReveal){
-        visible = new ArrayList<>(numOfCoins);
-
-        for (int i = 0; i < numToReveal; i ++) {
-            visible.add( new Random().nextInt(numToReveal), true);
+        // tests how many and what coins were generated. Will be removed before submission
+        // or should it stay ?
+        for (int i=1; i<= coins.size(); i++){
+            System.out.println("coin number " +i+": "+coins.get(i).getSide());
         }
-
+        System.out.println("initialization complete, ready for the spin");
     }
-
-
-    public void show(){
-
-        for (int i = 0; i <= coins.size(); i++){
-            System.out.println(coins.get(0)+" ");
-        }
-    }
-    }
+}
