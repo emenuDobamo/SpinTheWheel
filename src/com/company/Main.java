@@ -12,6 +12,7 @@ public class Main {
         Scanner scnr = new Scanner(System.in);
         int numOfCoins =scnr.nextInt();
         spinner = new Spinner(numOfCoins);
+        System.out.println("Enter the number of coins to reveal");
         int numToreveal = scnr.nextInt();
         spinner.spin(numOfCoins,numToreveal);
 
