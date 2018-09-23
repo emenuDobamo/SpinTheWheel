@@ -4,9 +4,8 @@ import java.util.Random;
 
 public class Coin {
 
-    private enum typeOfSide {HEAD, TAIL;};
+    private enum typeOfSide {HEAD, TAIL}
     private typeOfSide side;
-
 
     //constructor
     public Coin (){
@@ -18,28 +17,13 @@ public class Coin {
       else {
           side = typeOfSide.TAIL;
       }
-
     }
 
-
-
-    public   void flip(){
-
-        if(side == typeOfSide.HEAD){
-            side = typeOfSide.TAIL;
-        }
-        else {
-            side = typeOfSide.HEAD;
-        }
-
-    }
+    // dont need set yet but I guess we can keep it as part of "get, set"
     public  void setSide(typeOfSide side){
-
         this.side = side;
     }
     public  typeOfSide getSide(){
-
         return side;
     }
-
 }
