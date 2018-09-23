@@ -11,18 +11,39 @@ public class Main {
         System.out.println("Enter number of coin: ");
         Scanner scnr = new Scanner(System.in);
         int numOfCoins =scnr.nextInt();
-        System.out.println("Input accepted for number of coins: "+numOfCoins);
+        if (numOfCoins < 0){
+            System.out.println("Invalid Input!");
+        }
+        else {
+
+            System.out.println("Input accepted for number of coins: "+numOfCoins);
+        }
+
 
         System.out.println("\nEnter the number of coins to reveal");
         int numToreveal = scnr.nextInt();
-        System.out.println("Input accepted for number of coins: "+numToreveal);
+        if (numToreveal < 0){
+            System.out.println("Invalid Input!");
+        }
+        else {
+
+            System.out.println("Input accepted for number of coins to reveal: "+numToreveal);
+        }
 
 
         System.out.println("\nEnter the number spin:");
         int numOfSpin = scnr.nextInt();
-        System.out.println("Input accepted for number of coins: "+numToreveal);
+        if (numOfSpin < 0){
+            System.out.println("Invalid Input!");
+        }
+        else {
 
+            System.out.println("Input accepted for number of spin: " + numOfSpin);
+        }
 
+        /**
+         * Intialize the game.
+         */
         spinner = new Spinner(numOfCoins);
         System.out.println("initialization complete, ready for the spin");
 
