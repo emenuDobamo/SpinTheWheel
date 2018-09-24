@@ -20,7 +20,7 @@ public class Main {
         System.out.print("\nEnter the number of coins to reveal: ");
         numToReveal = scnr.nextInt();
 
-        if (numToReveal < 0){
+        if (numToReveal < 0 || numToReveal > numOfCoins){
             System.out.println("Invalid Input!");
             System.exit(0);
         }
@@ -43,5 +43,5 @@ public class Main {
          * Intialize the game.
          */
         Spinner spinner = new Spinner(numOfCoins);
-            }
+    }
 }
