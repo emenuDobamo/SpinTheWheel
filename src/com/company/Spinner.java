@@ -14,7 +14,7 @@ public class Spinner {
         }
         // tests how many and what coins were generated. Will be removed before submission
         // or should it stay ?
-        for (int i=0; i<= coins.size(); i++){
+        for (int i=0; i<coins.size(); i++){
             System.out.println("coin index number " +i+": "+coins.get(i).getSide());
         }
         System.out.println("initialization complete, ready for the spin");
