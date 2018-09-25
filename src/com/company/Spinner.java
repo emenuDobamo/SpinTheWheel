@@ -9,12 +9,14 @@ package com.company;
  Egor Muscat, Travis Rebhan, Justin Wu, Emenu Dobamo.
  */
 public class Spinner {
-     /**
+
+    CircularList<Coin> coins;
+    /**
       * Constructs a spinner object which initializes CircularList with the
       * number of coins provided by the user input
       */
     public Spinner (int numOfCoins){
-        CircularList<Coin> coins = new CircularList<>(numOfCoins);
+        coins = new CircularList<>(numOfCoins);
         System.out.println("Initializing the game with random coins...");
         for (int i = 0; i < numOfCoins; i++){
             coins.add(i,new Coin());
@@ -25,5 +27,16 @@ public class Spinner {
             System.out.println("coin index number " +i+": "+coins.get(i).getSide());
         }
         System.out.println("initialization complete, ready for the spin");
+    }
+
+    public void spin(){
+        Coin temp;
+        int i;
+        temp = coins.get(0);
+        for (i = 0; i < coins.size() - 1; i++)
+            coins.set(i,coins.get(i+1));
+        coins.set(i,temp);
+
+
     }
 }
