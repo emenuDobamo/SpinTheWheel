@@ -11,8 +11,8 @@ import java.util.Random;
  */
 public class Coin {
 
-    private enum typeOfSide {HEAD, TAIL}
-    private typeOfSide side;
+
+    private TypeOfSide side;
 
     /**
      * Constructs a Coin object using random number between 0.0 and 0.9
@@ -23,10 +23,10 @@ public class Coin {
       Random  rnd = new Random();
       double random = rnd.nextDouble();
       if (random > 0.5){
-          side = typeOfSide.HEAD;
+          side = TypeOfSide.HEAD;
       }
       else {
-          side = typeOfSide.TAIL;
+          side = TypeOfSide.TAIL;
       }
     }
 
@@ -34,7 +34,7 @@ public class Coin {
      * This method not used in this version.
      */
     // dont need set yet but I guess we can keep it as part of "get, set"
-    public  void setSide(typeOfSide side){
+    public  void setSide(TypeOfSide side){
         this.side = side;
     }
 
@@ -42,7 +42,12 @@ public class Coin {
      * Accesses the coin to see what side it is
      * @return HEADS or TAILS.
      */
-    public  typeOfSide getSide(){
+    public TypeOfSide getSide(){
         return side;
     }
+
+
+
+    private enum TypeOfSide {HEAD, TAIL}
+
 }
