@@ -21,7 +21,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 # Running the tests
 - Run the project and follow the prompt on the command line.
-![Recordit GIF] (http://g.recordit.co/jvhNQaAUay.gif)
+![Recordit GIF](http://g.recordit.co/jvhNQaAUay.gif)
 
 # License
 MIT license
