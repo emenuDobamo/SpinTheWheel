@@ -25,6 +25,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 # Sprint Log
 [first sprint log](https://docs.google.com/spreadsheets/d/1PIudogOTc6URUZXKcyilTn6Ya2k7qEGRjJ32t0pRZRQ/edit#gid=0)
+[second sprint log](https://docs.google.com/spreadsheets/d/1uxuEt0bNaSBh-x3gHvsYgb7NS9gtXoVwZ7r4zWAvqt0/edit#gid=0)
 
 # License
 The MIT License (MIT)
