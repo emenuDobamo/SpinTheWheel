@@ -53,7 +53,7 @@ public class Spinner {
         }
         System.out.println("initialization complete, ready for the spin");
     }
-
+        //this is secnd print baranch
     public void spin(){
         Collections.rotate(coins,new Random().nextInt(coins.size()));
     }
